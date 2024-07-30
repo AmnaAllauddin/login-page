@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: url(./download\ \(1\).jpeg) no-repeat center center/cover;
+
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1%;
+    background: #851e14;
+
+}
+
+.left-nav h1 {
+    color: beige;
+    font-size: larger;
+    font-weight: 900;
+}
+
+.right-nav ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 2rem;
+}
+
+a {
+    text-decoration: none;
+    background: none;
+    color: beige;
+    font-size: larger;
+}
+
+#login,
+#logout,
+#submit {
+    background: #bd2d20;
+    padding: 0.5rem;
+    height: 2rem;
+    width: 6rem;
+    border: none;
+    color: beige;
+    font-size: medium;
+    border-radius: 1rem;
+}
+
+#login:hover,
+#logout:hover,
+#submit:hover {
+    box-shadow: 0.5px 0.5px 2px 2px beige;
+    width: 7rem;
+
+}
+
+#logout {
+    display: none;
+}
+
+#submit {
+    margin: auto;
+    width: 10rem;
+}
+
+a:hover {
+    text-shadow: 3px 3px 2px black;
+}
+
+form {
+    height: 30%;
+    width: 30%;
+    margin: 12% auto;
+    background: transparent;
+    border: 1px solid beige;
+    box-shadow: 1px 1px 3px 3px beige;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2%;
+    gap: 2rem;
+
+}
+
+input {
+    padding: 1rem;
+    outline: none;
+    border-radius: 0.5rem;
+    width: 60%;
+}
+
+input:hover {
+    border: 2px solid black;
+}
+
+form h1 {
+    color: beige;
+    margin: auto;
+}
+
+@media(max-width:786px) {
+    nav {
+        flex-direction: column;
+        padding: 2%;
+    }
+
+    .right-nav,
+    ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    #login,
+    #logout,
+    #submit {
+        width: 100%;
+        padding: 1rem;
+    }
+
+    form {
+        width: 80%;
+        padding: 4%;
+    }
+
+    input {
+        width: 100%;
+    }
+
+    .left-nav h1 a {
+        font-size: medium;
+    }
+}
+
+@media(max-width:480px) {
+    nav {
+        padding: 3%;
+    }
+
+    .right-nav,
+    ul {
+        gap: 0.5rem;
+    }
+
+    #login,
+    #logout,
+    #submit {
+        width: auto;
+        padding: 0.5rem;
+        font-size: medium;
+    }
+
+    form {
+        width: 90%;
+        padding: 5%;
+    }
+
+    .left-nav h1 {
+        font-size: medium;
+    }
+}
